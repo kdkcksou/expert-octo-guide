@@ -1,34 +1,24 @@
-/* Ömer & Damla - script.js */
-
-/* ✏️ BURAYI KENDİNE GÖRE DÜZENLE ✏️ */
 const QUESTIONS = [
   {
     type: "text", text: "Ömer kaç yaşında?", placeholder: "Bir sayı yaz…", inputMode: "numeric",
     answers: ["20"],
-    wrong: ["Yanlış hatırladın aşkım, tekrar dene! 🙈", "Yaşımı unuttun mu yoksa beni yaşlandırmaya mı çalışıyorsun? 😏"],
+    wrong: ["Yanlış hatırladın, tekrar dene! 🙈", "Yaşımı unuttun mu yoksa beni yaşlandırmaya mı çalışıyorsun? 😏"],
   },
   {
     type: "text", text: "Ömer'in burcu ne?", placeholder: "Burcumu yaz…",
     // ⚠️ Kendi burcunu yaz ("Balık" / "balik" fark etmez)
     answers: ["Balık"],
-    wrong: ["Hımm, yıldızlar bu cevaba pek gülmedi… tekrar dene! ✨", "Yaklaştın ama hâlâ değil sevgilim, bir daha bak 🔮"],
+    wrong: ["Hımm, yıldızlar bu cevaba pek gülmedi… tekrar dene! ✨", "Yaklaştın ama hâlâ değil, bir daha bak 🔮"],
   },
   {
     type: "choice", text: "Damla, Ömer'in gözünde ne ifade ediyor?",
     options: ["Güzel bir arkadaş", "Her şey", "Sadece sevgili", "Bilmem ki…"],
     correct: "Her şey",
-    wrong: ["Bu kadar mı küçülttün beni? Bir daha düşün 🥺", "Kalbime dokunmadı bu cevap, tekrar dene aşkım 💔"],
-  },
-  {
-    type: "choice", text: "İlk kavgamızda ne olmuştu?",
-    // ⚠️ Seçenekleri ve doğru cevabı kendi hikâyenize göre değiştir
-    options: ["Küstük ve hemen barışmadık", "Birbirimizi çok özleyip barıştık", "Hiç kavga etmedik ki!", "Beni affetmen çok zor oldu"],
-    correct: "Birbirimizi çok özleyip barıştık",
-    wrong: ["Bunu öyle hatırlamıyorum aşkım, bir daha düşün 😌", "Hafızan beni yanıltıyor, tekrar dene! 💭"],
+    wrong: ["Bu kadar mı küçülttün beni? Bir daha düşün 🥺", "Kalbime dokunmadı bu cevap, tekrar dene 💔"],
   },
 ];
 
-const SUCCESS = ["Aferin bana, çok doğru! 💗", "İşte benim hatırlayan sevgilim! ✨", "Biliyordum, sen beni bilirsin 🌹", "Kalbim eridi, devam! 🥰"];
+const SUCCESS = ["Aferin bana, çok doğru! 💗", "İşte benim hatırlayan damlalar arasındaki en güzel damla! ✨", "Biliyordum, sen beni bilirsin 🌹", "Kalbim eridi, devam! 🥰"];
 
 const DODGE_TEXTS = ["Biraz daha düşüneyim", "Emin misin? 🥺", "Yapma ama…", "Yakalayabilirsen bas 😏", "Tamam, vazgeçtim 🙈"];
 
